@@ -1,0 +1,36 @@
+<div class="container" >
+  <a class="links" id="paracadastro"></a>
+  <a class="links" id="paralogin"></a>
+  
+  <div class="content">      
+    <!--FORMULÁRIO DE LOGIN-->
+    <div id="login">
+      <form method="post" action=""> 
+        <h1>Login</h1> 
+        <p> 
+          <label for="usuario">Seu e-mail</label>
+          <input [(ngModel)] = "usuario.nome" name="usuario"   type="text" placeholder="contato@html.com"/>
+        </p>
+        
+        <p> 
+          <label for="senha">Sua senha</label>
+          <input [(ngModel)] = "usuario.senha" name="senha"   type="password" placeholder="1234" /> 
+        </p>
+        
+        <p> 
+          <input type="submit" (click)="fazerLogin()" value="Logar" /> 
+        </p>
+        <p> 
+          <input type="submit" value="Logar com o Google" /> 
+        </p>
+        
+        <p class="link">
+          Ainda não tem conta?
+          <a routerLink="/cadastro" >Cadastre-se</a>
+        </p>
+      </form>
+    </div>
+
+    
+  </div>
+</div> 
