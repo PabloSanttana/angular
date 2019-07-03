@@ -4,14 +4,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './principal/login/login.component';
-import { FilmesComponent } from './principal/filmes/filmes.component';
 import { CadastrosComponent } from './principal/cadastros/cadastros.component';
+import { CasosclinicosComponent } from './principal/Casos/casosclinicos/casosclinicos.component';
+import { PrincipalComponent } from './principal/principal.component';
+
 
 
 const routes: Routes = [
-  {path : 'login', component: LoginComponent,},
-  { path : 'filmes', component: FilmesComponent},
-  { path : 'cadastro', component: CadastrosComponent}
+  {path : '', component: PrincipalComponent},
+  {path : 'login', component: LoginComponent},
+  { path : 'cadastro', component: CadastrosComponent},
+  { path : 'casos', component: CasosclinicosComponent}
+  
+  
+
 ];
 
 @NgModule({
